@@ -3,7 +3,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
-body {
+
+/* Home */
+.home-body {
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,30 +20,65 @@ body {
   justify-content: center;
   align-items: center;
 }
-p {
+.home-p {
   text-align: left;
 }
-/* Headings */
-h1 {
+.home-ul {
+  text-align: left;
+  list-style-type: disc;
+}
+.home-h1 {
   color: #00ff88;
   margin-bottom: 20px;
 }
-h2 {
-  color: red;
-  text-align: center;
-}
-img {
+.home-img {
   margin-bottom: 20px;
   border-radius: 8px;
   width: 300px;
   height: 400px;
 }
-a {
+.home-a {
   text-decoration: none;
   color: blue;
   outline: none;
 }
-button {
+
+/* DAY 1 */
+.day1-body {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+  padding: 20px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.day1-p {
+  text-align: left;
+}
+.day1-h1 {
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+.day1-img {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 300px;
+  height: 400px;
+}
+.day1-a {
+  text-decoration: none;
+  color: blue;
+  outline: none;
+}
+
+.day1-button {
   padding: 10px 20px;
   background-color: #00ff88;
   color: #111;
@@ -50,11 +87,80 @@ button {
   font-weight: bold;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   cursor: pointer;
-  transition: all 0.3s linear(5px);
+  transition: transform 0.3s ease;
 }
-button:hover {
+.day1-button:hover {
   background-color: #0affaa;
   transform: scale(1.05s);
+}
+.day1-ul {
+  list-style-type: circle;
+  padding-left: 0px;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .day1-ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .day1-body {
+    text-align: left;
+  }
+}
+/* DAY 2 */
+.day2-body {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+  padding: 20px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.day2-p {
+  text-align: left;
+}
+.day2-h1 {
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+.day2-a {
+  text-decoration: none;
+  color: blue;
+  outline: none;
+}
+
+.day2-button {
+  padding: 10px 20px;
+  background-color: #00ff88;
+  color: #111;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.day2-button:hover {
+  background-color: #0affaa;
+  transform: scale(1.05s);
+}
+.day2-ul {
+  list-style-type: circle;
+  padding-left: 0px;
+  padding: 30px;
+}
+
+.day2-h2 {
+  color: red;
+  text-align: center;
 }
 hr {
   border: blue solid 2px;
@@ -62,20 +168,111 @@ hr {
   width: 70%;
   margin-top: 20px;
 }
-ul {
-  list-style-type: circle;
-  padding-left: 0px;
-  padding: 30px;
-}
+
 @media (min-width: 768px) {
-  ul {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  body {
-    text-align: left;
-  }
   hr {
     width: 27%;
+  }
+}
+
+/* DAY 3 */
+.day3-body {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+  padding: 20px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.day3-h1 {
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+.day3-a {
+  text-decoration: none;
+  color: blue;
+  outline: none;
+}
+
+.day3-button {
+  padding: 10px 20px;
+  background-color: #00ff88;
+  color: #111;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.day3-button:hover {
+  background-color: #0affaa;
+  transform: scale(1.05s);
+}
+.day3-h2 {
+  color: red;
+  text-align: center;
+}
+.day3-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 32px;
+  flex-wrap: wrap;
+}
+
+.day3-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  transition: transform 0.3s ease;
+}
+.day3-img:hover {
+  transform: scale(1.05);
+}
+
+.day3-p {
+  max-width: 500px;
+  color: #eee;
+  font-size: 16.5px;
+  margin-top: 1rem;
+}
+
+.day3-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-type: none;
+  text-align: left;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 2rem;
+}
+.day3-li {
+  background: #333;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  color: #fff;
+  transition: background 0.3s;
+}
+.day3-li:hover {
+  background: #444;
+}
+
+@media (max-width: 768px) {
+  .day3-div {
+    flex-direction: column;
+    text-align: center;
   }
 }
